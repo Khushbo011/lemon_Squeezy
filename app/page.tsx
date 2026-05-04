@@ -21,6 +21,7 @@ const featuredProducts = [
     reviewCount: 128,
     isHot: true,
     image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=220&fit=crop&auto=format",
+    checkoutUrl: "https://digitalnestt.lemonsqueezy.com/checkout/buy/f83d063a-7742-4d82-b26b-a918dd0cd42d"
   },
   {
     id: "2",
@@ -306,7 +307,8 @@ export default function HomePage() {
             {categories.map((cat) => (
               <Link
                 key={cat.name}
-                href="/products"
+                // href="/products"
+                href={`/category/${cat.name.toLowerCase().replace(" ", "-")}`}
                 className="category-tile glass-card p-10 text-center cursor-pointer group"
                 style={{
                   background: "rgba(255, 255, 255, 0.03)",

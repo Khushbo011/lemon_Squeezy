@@ -17,8 +17,8 @@ export function Navbar({ cartCount = 0 }: NavbarProps) {
   const navLinks = [
     { href: "/", label: "Explore" },
     { href: "/products", label: "Products" },
-    { href: "#categories", label: "Category" },
-    { href: "#about", label: "About Us" },
+    { href: "/category/ui-kits", label: "Category" },
+    { href: "/about", label: "About Us" },
   ]
 
   return (

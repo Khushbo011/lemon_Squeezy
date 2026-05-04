@@ -1,0 +1,33 @@
+export const allProducts = [
+    {
+      id: "1",
+      title: "Nebula UI Kit",
+      creator: "designpro",
+      category: "UI Kit",
+      price: 29,
+      rating: 5,
+      reviewCount: 128,
+      isHot: true,
+      image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400",
+    },
+    {
+      id: "2",
+      title: "Dashboard Pro Kit",
+      creator: "uicraft",
+      category: "UI Kit",
+      price: 59,
+      rating: 5,
+      reviewCount: 201,
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+    },
+    {
+      id: "3",
+      title: "Icon Pack",
+      creator: "iconmaster",
+      category: "Icons",
+      price: 19,
+      rating: 5,
+      reviewCount: 234,
+      image: "https://images.unsplash.com/photo-1617042375876-a13e36732a04?w=400",
+    },
+  ]
