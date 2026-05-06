@@ -7,6 +7,7 @@ interface Product {
   title: string
   price: number
   image: string
+  buyLink?: string
 }
 
 export default function CartPage() {
@@ -19,6 +20,7 @@ export default function CartPage() {
       title: "Nebula UI Kit",
       price: 499,
       image: "/images/nebula.png",
+      buyLink: "https://digitalnestt.lemonsqueezy.com/checkout",
     },
     {
       id: "2",
@@ -34,12 +36,25 @@ export default function CartPage() {
     },
   ]
 
-  // ✅ Load cart from localStorage
+  // // ✅ Load cart from localStorage
+  // useEffect(() => {
+  //   const storedCart = JSON.parse(localStorage.getItem("cart") || "[]")
+  //   setCart(storedCart)
+  // }, [])
   useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem("cart") || "[]")
-    setCart(storedCart)
+    const loadCart = () => {
+      const storedCart = JSON.parse(localStorage.getItem("cart") || "[]")
+      setCart(storedCart)
+    }
+  
+    loadCart()
+  
+    window.addEventListener("cartUpdated", loadCart)
+  
+    return () => {
+      window.removeEventListener("cartUpdated", loadCart)
+    }
   }, [])
-
   // ✅ Remove item
   const removeItem = (id: string) => {
     const updated = cart.filter((item) => item !== id)
@@ -89,6 +104,22 @@ export default function CartPage() {
                     </h2>
                     <p className="text-blue-400">₹{product.price}</p>
                   </div>
+                  {/* ✅ BUY BUTTON ADD HERE */}
+{product.buyLink ? (
+  <a
+    href={product.buyLink}
+    target="_blank"
+    className="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600"
+  >
+    Buy Now
+  </a>
+) : (
+  <button
+    className="bg-gray-500 px-4 py-2 rounded-lg cursor-not-allowed"
+  >
+    Buy Now
+  </button>
+)}
 
                   {/* REMOVE */}
                   <button
