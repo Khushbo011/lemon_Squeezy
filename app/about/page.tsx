@@ -90,6 +90,7 @@ const values = [
   },
 ]
 
+// ── UPDATED: image field added ──
 const team = [
   {
     name: "Aryan Mehta",
@@ -98,6 +99,7 @@ const team = [
     gradient: "linear-gradient(135deg, #3B82F6, #06B6D4)",
     initials: "AM",
     funFact: "Has 400+ Figma templates saved",
+    image: "https://i.pravatar.cc/150?img=11",
   },
   {
     name: "Priya Sharma",
@@ -106,6 +108,7 @@ const team = [
     gradient: "linear-gradient(135deg, #F59E0B, #3B82F6)",
     initials: "PS",
     funFact: "Can't start the day without Dribbble",
+    image: "https://i.pravatar.cc/150?img=47",
   },
   {
     name: "Rohan Das",
@@ -114,6 +117,7 @@ const team = [
     gradient: "linear-gradient(135deg, #06B6D4, #10B981)",
     initials: "RD",
     funFact: "Dark mode evangelist (obviously)",
+    image: "https://i.pravatar.cc/150?img=8",
   },
   {
     name: "Sneha Kapoor",
@@ -122,6 +126,7 @@ const team = [
     gradient: "linear-gradient(135deg, #10B981, #06B6D4)",
     initials: "SK",
     funFact: "Sold her own Notion templates here first",
+    image: "https://i.pravatar.cc/150?img=45",
   },
 ]
 
@@ -133,6 +138,7 @@ const testimonials = [
     role: "Product Designer, Stripe",
     stars: 5,
     gradient: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+    image: "https://i.pravatar.cc/150?img=45",
   },
   {
     quote:
@@ -202,7 +208,7 @@ export default function AboutPage() {
       ([entry]) => {
         if (entry.isIntersecting && !counted.current) {
           counted.current = true
-          const targets = { customers: 50000, products: 12000, creators: 2000, countries: 40 }
+          const targets = { customers: 5000, products: 1200, creators: 200, countries: 40 }
           const duration = 2000
           const steps = 60
           const interval = duration / steps
@@ -636,16 +642,16 @@ export default function AboutPage() {
                   borderRadius: "20px",
                 }}
               >
-                {/* Avatar */}
+                {/* ── UPDATED: Real photo avatar ── */}
                 <div
-                  className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-5 text-xl font-bold text-white relative"
-                  style={{
-                    background: member.gradient,
-                    fontFamily: "'Space Mono', monospace",
-                    boxShadow: "0 8px 32px rgba(59,130,246,0.2)",
-                  }}
+                  className="w-20 h-20 rounded-full mx-auto mb-5 relative overflow-hidden"
+                  style={{ boxShadow: "0 8px 32px rgba(59,130,246,0.25)" }}
                 >
-                  {member.initials}
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover rounded-full"
+                  />
                   {/* Online indicator */}
                   <span
                     className="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full"

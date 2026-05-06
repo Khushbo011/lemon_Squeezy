@@ -91,19 +91,22 @@ const categories = [
 
 const testimonials = [
   {
-    quote: "DigitalStore completely transformed how I find design assets. The quality is unmatched.",
+    quote: "DigitalStore completely transformed how I find design assets.",
     name: "Sarah Chen",
     role: "Product Designer at Stripe",
+    image: "https://i.pravatar.cc/100?img=1",
   },
   {
-    quote: "As a creator, I've made more sales here than any other platform. The community is amazing.",
+    quote: "As a creator, I've made more sales here than any other platform.",
     name: "Marcus Williams",
     role: "Independent Creator",
+    image: "https://i.pravatar.cc/100?img=2",
   },
   {
-    quote: "The curation is chef's kiss. Every product feels premium and well-crafted.",
+    quote: "The curation is chef's kiss.",
     name: "Emma Rodriguez",
     role: "Frontend Developer",
+    image: "https://i.pravatar.cc/100?img=3",
   },
 ]
 

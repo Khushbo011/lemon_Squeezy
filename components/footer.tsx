@@ -68,18 +68,24 @@ export function Footer() {
               Products
             </h4>
             <ul className="flex flex-col gap-3">
-              {["UI Kits", "Templates", "Icons", "Fonts", "Illustrations"].map((item) => (
-                <li key={item}>
-                  <Link 
-                    href="/products" 
-                    className="text-[#94A3B8] text-sm hover:text-[#3B82F6] transition-colors"
-                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+  {[
+    { name: "About Us", href: "/about" },
+    { name: "Careers", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Refund Policy", href: "/refund-policy" }, // ✅ IMPORTANT
+    { name: "Contact", href: "#" },
+  ].map((item) => (
+    <li key={item.name}>
+      <Link 
+        href={item.href}
+        className="text-[#94A3B8] text-sm hover:text-[#06B6D4] transition-colors"
+        style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+      >
+        {item.name}
+      </Link>
+    </li>
+  ))}
+</ul>
           </div>
 
           {/* Company */}
@@ -88,7 +94,7 @@ export function Footer() {
               Company
             </h4>
             <ul className="flex flex-col gap-3">
-              {["About Us", "Careers", "Blog", "Press Kit", "Contact"].map((item) => (
+              {["About Us", "Careers", "Blog", "Refund policy", "Contact"].map((item) => (
                 <li key={item}>
                   <Link 
                     href="#" 

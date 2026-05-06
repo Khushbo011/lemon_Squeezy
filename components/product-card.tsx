@@ -1,7 +1,9 @@
 "use client"
 
-import { useState } from "react"
-import { Star, Loader2 } from "lucide-react"
+import { useState,useEffect} from "react"
+import { Star, Loader2,Heart} from "lucide-react"
+
+
 
 interface ProductCardProps {
   id: string
@@ -19,6 +21,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard({
+  id,
   title,
   creator,
   category,
@@ -34,6 +37,24 @@ export function ProductCard({
 
   const [isLoading, setIsLoading] = useState(false)
   const [imgError, setImgError] = useState(false)
+  const [inCart, setInCart] = useState(false)
+
+useEffect(() => {
+  const cart = JSON.parse(localStorage.getItem("cart") || "[]")
+  if (cart.includes(id)) {
+    setInCart(true)
+  }
+}, [id])
+
+  const [liked, setLiked] = useState(false)
+
+// Load wishlist from localStorage
+useEffect(() => {
+  const wishlist = JSON.parse(localStorage.getItem("wishlist") || "[]")
+  if (wishlist.includes(id)) {
+    setLiked(true)
+  }
+}, [id])
 
   const handleBuyNow = () => {
     if (isLoading) return
@@ -55,6 +76,36 @@ export function ProductCard({
     } finally {
       setIsLoading(false)
     }
+  }
+  const handleWishlist = () => {
+    console.log("Clicked product ID:", id)
+    let wishlist = JSON.parse(localStorage.getItem("wishlist") || "[]")
+  
+    if (wishlist.includes(id)) {
+      wishlist = wishlist.filter((item: string) => item !== id)
+      setLiked(false)
+    } else {
+      wishlist.push(id)
+      setLiked(true)
+    }
+  
+    localStorage.setItem("wishlist", JSON.stringify(wishlist))
+  }
+  const handleCart = () => {
+    console.log("Cart clicked ID:", id)
+  
+    let cart = JSON.parse(localStorage.getItem("cart") || "[]")
+  
+    if (cart.includes(id)) {
+      cart = cart.filter((item: string) => item !== id)
+      setInCart(false)
+    } else {
+      cart.push(id)
+      setInCart(true)
+    }
+  
+    localStorage.setItem("cart", JSON.stringify(cart))
+    window.dispatchEvent(new Event("cartUpdated"))
   }
 
   const getCategoryColor = (cat: string) => {
@@ -100,7 +151,7 @@ export function ProductCard({
         )}
 
         {/* CATEGORY */}
-        <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold text-white"
+        <div className="absolute top-4 left-12 px-3 py-1 rounded-full text-xs font-semibold text-white"
           style={{ background: "rgba(0,0,0,0.6)" }}
         >
           {category}
@@ -157,25 +208,48 @@ export function ProductCard({
             </span>
           )}
         </div>
+        {/* ❤️ WISHLIST */}
+<button
+  onClick={handleWishlist}
+  className="absolute top-4 left-4 z-20"
+>
+  <Heart
+    size={20}
+    className={`transition-all ${
+      liked ? "text-red-500 fill-red-500" : "text-white"
+    }`}
+  />
+</button>
+{/* ADD TO CART */}
+<button
+  onClick={handleCart}
+  className={`w-full py-3 mb-3 rounded-xl font-semibold ${
+    inCart
+      ? "bg-green-500 text-white"
+      : "bg-white/10 text-white hover:bg-white/20"
+  }`}
+>
+  {inCart ? "✅ Added to Cart" : "🛒 Add to Cart"}
+</button>
 
-        {/* BUTTON */}
-        <button
-          onClick={handleBuyNow}
-          disabled={isLoading}
-          className="w-full py-3 rounded-xl font-bold text-white transition-all hover:scale-[1.02] disabled:opacity-60"
-          style={{
-            background: "linear-gradient(135deg,#3B82F6,#06B6D4)",
-          }}
-        >
-          {isLoading ? (
-            <span className="flex items-center justify-center gap-2">
-              <Loader2 className="animate-spin" size={18} />
-              Opening...
-            </span>
-          ) : (
-            "Buy Now →"
-          )}
-        </button>
+{/* BUY NOW */}
+<button
+  onClick={handleBuyNow}
+  disabled={isLoading}
+  className="w-full py-3 rounded-xl font-bold text-white"
+  style={{
+    background: "linear-gradient(135deg,#3B82F6,#06B6D4)",
+  }}
+>
+  {isLoading ? (
+    <span className="flex items-center justify-center gap-2">
+      <Loader2 className="animate-spin" size={18} />
+      Opening...
+    </span>
+  ) : (
+    "Buy Now →"
+  )}
+</button>
 
       </div>
     </div>
