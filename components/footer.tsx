@@ -73,7 +73,7 @@ export function Footer() {
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms & Conditions", href: "/terms" },
     { name: "Refund Policy", href: "/refund-policy" }, // ✅ IMPORTANT
-    { name: "Contact page", href: "#" },
+    { name: "Contact page", href: "/contact-page" },
   ].map((item) => (
     <li key={item.name}>
       <Link 
