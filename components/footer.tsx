@@ -70,10 +70,10 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
   {[
     { name: "About Us", href: "/about" },
-    { name: "Careers", href: "#" },
-    { name: "Blog", href: "#" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms & Conditions", href: "/terms" },
     { name: "Refund Policy", href: "/refund-policy" }, // ✅ IMPORTANT
-    { name: "Contact", href: "#" },
+    { name: "Contact page", href: "#" },
   ].map((item) => (
     <li key={item.name}>
       <Link 
