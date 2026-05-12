@@ -18,26 +18,26 @@ export default function CartPage() {
     {
       id: "1",
       title: "Nebula UI Kit",
-      price: 499,
+      price: 99,
       image: "/images/nebula.png",
       buyLink: "https://digitalnestt.lemonsqueezy.com/checkout",
     },
     {
       id: "2",
       title: "Icons Pack",
-      price: 299,
+      price: 99,
       image: "/images/icons.png",
     },
     {
       id: "3",
       title: "Landing Template",
-      price: 799,
+      price: 99,
       image: "/images/template.png",
     },
     {
       id: "7",
-      title: "Top 5 Educational Videos",
-      price: 99,
+      title: "Top 5 AI Tools",
+      price: 499,
       image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
       buyLink: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
     },
@@ -48,11 +48,11 @@ export default function CartPage() {
       const storedCart = JSON.parse(localStorage.getItem("cart") || "[]")
       setCart(storedCart)
     }
-  
+
     loadCart()
-  
+
     window.addEventListener("cartUpdated", loadCart)
-  
+
     return () => {
       window.removeEventListener("cartUpdated", loadCart)
     }
@@ -104,24 +104,24 @@ export default function CartPage() {
                     <h2 className="text-lg font-semibold">
                       {product.title}
                     </h2>
-                    <p className="text-blue-400">₹{product.price}</p>
+                    <p className="text-blue-400">${product.price}</p>
                   </div>
                   {/* ✅ BUY BUTTON ADD HERE */}
-{product.buyLink ? (
-  <a
-    href={product.buyLink}
-    target="_blank"
-    className="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600"
-  >
-    Buy Now
-  </a>
-) : (
-  <button
-    className="bg-gray-500 px-4 py-2 rounded-lg cursor-not-allowed"
-  >
-    Buy Now
-  </button>
-)}
+                  {product.buyLink ? (
+                    <a
+                      href={product.buyLink}
+                      target="_blank"
+                      className="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600"
+                    >
+                      Buy Now
+                    </a>
+                  ) : (
+                    <button
+                      className="bg-gray-500 px-4 py-2 rounded-lg cursor-not-allowed"
+                    >
+                      Buy Now
+                    </button>
+                  )}
 
                   {/* REMOVE */}
                   <button
@@ -139,7 +139,7 @@ export default function CartPage() {
           <div className="p-6 bg-white/5 border border-white/10 rounded-xl flex justify-between items-center">
             <h2 className="text-xl font-bold">Total</h2>
             <span className="text-2xl text-blue-400 font-bold">
-              ₹{total}
+              ${total}
             </span>
           </div>
         </>

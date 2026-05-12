@@ -45,7 +45,7 @@ const milestones = [
   },
   {
     year: "2022",
-    title: "₹10 Crore GMV",
+    title: "$1.2 Million GMV",
     desc: "Hit a massive milestone. Expanded to 15 product categories. Hired our first full-time team members. Moved from an apartment to a real office.",
     color: "#F59E0B",
   },
@@ -189,7 +189,7 @@ const faqs = [
   },
   {
     q: "How do creators get paid?",
-    a: "Creators receive 80% of every sale, paid out weekly via Stripe or PayPal. No thresholds — even ₹100 gets paid out.",
+    a: "Creators receive 80% of every sale, paid out weekly via Stripe or PayPal. No thresholds — even $1 gets paid out.",
   },
 ]
 

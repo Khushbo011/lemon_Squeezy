@@ -142,7 +142,7 @@
 //         <span className="text-xs text-gray-400">({reviewCount})</span>
 //       </div>
 
-//       <div className="mt-2 text-blue-400 font-bold">₹{price}</div>
+//       <div className="mt-2 text-blue-400 font-bold">${price}</div>
 
 //       <button
 //         onClick={handleBuy}
@@ -177,7 +177,7 @@
 //       </div>
 
 //       <div className="flex items-center gap-4">
-//         <div className="text-blue-400 font-bold">₹{price}</div>
+//         <div className="text-blue-400 font-bold">${price}</div>
 
 //         <button
 //           onClick={handleBuy}
@@ -205,7 +205,7 @@ const allProducts = [
     title: "Nebula UI Kit",
     creator: "designpro",
     category: "UI Kit",
-    price: 399,
+    price: 99,
     originalPrice: 59,
     rating: 5,
     reviewCount: 128,
@@ -220,7 +220,7 @@ const allProducts = [
     title: "Framer Portfolio",
     creator: "webcrafter",
     category: "Framer",
-    price: 49,
+    price: 99,
     rating: 4,
     reviewCount: 86,
     isNew: true,
@@ -230,10 +230,10 @@ const allProducts = [
   },
   {
     id: "7",
-    title: "Top 5 Educational Videos",
+    title: "Top 5 AI Tools",
     creator: "edumaster",
     category: "Education",
-    price: 99,
+    price: 499,
     originalPrice: 199,
     rating: 5,
     reviewCount: 845,
@@ -358,7 +358,7 @@ function ProductCard({
         <span className="text-xs text-gray-400">({reviewCount})</span>
       </div>
 
-      <div className="mt-2 text-blue-400 font-bold">₹{price}</div>
+      <div className="mt-2 text-blue-400 font-bold">${price}</div>
 
       <button
         onClick={handleBuy}
@@ -396,7 +396,7 @@ function ProductListCard({
       </div>
 
       <div className="flex items-center gap-4">
-        <span className="text-blue-400 font-bold">₹{price}</span>
+        <span className="text-blue-400 font-bold">${price}</span>
 
         <button
           onClick={handleBuy}

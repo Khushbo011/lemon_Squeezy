@@ -199,12 +199,12 @@ useEffect(() => {
         {/* PRICE */}
         <div className="flex items-center gap-2 mb-5">
           <span className="text-xl font-bold text-blue-400">
-            ₹{price}
+            ${price}
           </span>
 
           {originalPrice && (
             <span className="text-sm text-gray-500 line-through">
-              ₹{originalPrice}
+              ${originalPrice}
             </span>
           )}
         </div>
