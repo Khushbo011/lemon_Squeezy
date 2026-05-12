@@ -15,7 +15,7 @@ const featuredProducts = [
     title: "Nebula UI Kit",
     creator: "designpro",
     category: "UI Kit",
-    price: 29,
+    price: 399,
     originalPrice: 59,
     rating: 5,
     reviewCount: 128,
@@ -77,6 +77,19 @@ const featuredProducts = [
     reviewCount: 312,
     isHot: true,
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=220&fit=crop&auto=format",
+  },
+  {
+    id: "7",
+    title: "Top 5 Educational Videos",
+    creator: "edumaster",
+    category: "Education",
+    price: 599,
+    originalPrice: 199,
+    rating: 5,
+    reviewCount: 845,
+    isHot: true,
+    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
+    checkoutUrl: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link"
   },
 ]
 
@@ -232,21 +245,21 @@ export default function HomePage() {
 
           <div className="flex items-center justify-center gap-4">
             <div className="flex -space-x-3">
-            {[
-  "https://i.pravatar.cc/40?img=1",
-  "https://i.pravatar.cc/40?img=5",
-  "https://i.pravatar.cc/40?img=9",
-  "https://i.pravatar.cc/40?img=12",
-  "https://i.pravatar.cc/40?img=25",
-].map((src, i) => (
-  <img
-    key={i}
-    src={src}
-    alt="creator"
-    className="w-10 h-10 rounded-full object-cover"
-    style={{ border: "3px solid #030712" }}
-  />
-))}
+              {[
+                "https://i.pravatar.cc/40?img=1",
+                "https://i.pravatar.cc/40?img=5",
+                "https://i.pravatar.cc/40?img=9",
+                "https://i.pravatar.cc/40?img=12",
+                "https://i.pravatar.cc/40?img=25",
+              ].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="creator"
+                  className="w-10 h-10 rounded-full object-cover"
+                  style={{ border: "3px solid #030712" }}
+                />
+              ))}
             </div>
             <span className="text-sm text-[#94A3B8] font-medium">
               Trusted by <span className="text-[#3B82F6] font-bold">12,000+</span> creators

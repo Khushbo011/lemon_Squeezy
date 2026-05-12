@@ -205,7 +205,7 @@ const allProducts = [
     title: "Nebula UI Kit",
     creator: "designpro",
     category: "UI Kit",
-    price: 29,
+    price: 399,
     originalPrice: 59,
     rating: 5,
     reviewCount: 128,
@@ -227,6 +227,21 @@ const allProducts = [
     image:
       "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=400&h=220&fit=crop&auto=format",
     checkoutUrl: "", // ❌ missing = safe handled
+  },
+  {
+    id: "7",
+    title: "Top 5 Educational Videos",
+    creator: "edumaster",
+    category: "Education",
+    price: 99,
+    originalPrice: 199,
+    rating: 5,
+    reviewCount: 845,
+    isHot: true,
+    image:
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
+    checkoutUrl:
+      "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
   },
 ]
 

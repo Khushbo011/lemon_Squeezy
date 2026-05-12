@@ -34,13 +34,15 @@ export default function CartPage() {
       price: 799,
       image: "/images/template.png",
     },
+    {
+      id: "7",
+      title: "Top 5 Educational Videos",
+      price: 99,
+      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
+      buyLink: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+    },
   ]
 
-  // // ✅ Load cart from localStorage
-  // useEffect(() => {
-  //   const storedCart = JSON.parse(localStorage.getItem("cart") || "[]")
-  //   setCart(storedCart)
-  // }, [])
   useEffect(() => {
     const loadCart = () => {
       const storedCart = JSON.parse(localStorage.getItem("cart") || "[]")

@@ -42,7 +42,7 @@ const allProducts = [
     title: "Nebula UI Kit",
     creator: "designpro",
     category: "UI Kit",
-    price: 29,
+    price: 399,
     originalPrice: 59,
     rating: 5,
     reviewCount: 128,
