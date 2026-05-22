@@ -37,7 +37,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-[#94A3B8] text-sm leading-relaxed max-w-[280px]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-              The marketplace for premium digital products. Built for creators, by creators.
+              The Store for premium digital products. Built for creators, by creators.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-3 mt-2">

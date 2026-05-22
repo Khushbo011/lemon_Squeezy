@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'DigitalStore — Premium Digital Products Marketplace',
+  title: 'DigitalStore — Premium Digital Product Hub',
   description: 'Download premium templates, UI kits, icons, and design assets — built by top creators for modern products.',
   generator: 'v0.app',
   icons: {

@@ -28,7 +28,7 @@ const milestones = [
   {
     year: "2019",
     title: "The Spark",
-    desc: "Aryan couldn't find quality design assets without drowning in junk marketplaces. So he built one — from a tiny Bangalore apartment with 12 hand-picked products.",
+    desc: "Aryan couldn’t find high-quality design assets in one place, so he built a curated platform to simplify discovery.",
     color: "#3B82F6",
   },
   {
@@ -133,7 +133,7 @@ const team = [
 const testimonials = [
   {
     quote:
-      "I've tried every design marketplace out there. DigitalStore is the only one where I actually trust every single purchase. The curation is genuinely unmatched.",
+      "I've tried every design store out there. DigitalStore is the only one where I actually trust every single purchase. The curation is genuinely unmatched.",
     name: "Sarah Chen",
     role: "Product Designer, Stripe",
     stars: 5,
@@ -288,7 +288,7 @@ export default function AboutPage() {
             className="text-xl md:text-2xl text-[#94A3B8] max-w-[680px] mx-auto leading-relaxed mb-12"
             style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 300 }}
           >
-            DigitalStore was born from frustration. Too many marketplaces, too little quality.
+            DigitalStore was born from frustration. Too many stores, too little quality.
             We set out to build something different — a curated home for the world's best digital products.
           </p>
 
@@ -428,17 +428,17 @@ export default function AboutPage() {
                 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 300 }}
               >
                 <p>
-                  In 2019, Aryan spent three hours browsing a popular design marketplace looking for a
+                  In 2019, Aryan spent three hours browsing a popular design store looking for a
                   UI kit for a client project. He found something that looked promising, paid $49, and
                   downloaded a ZIP file full of broken components and outdated specs.
                 </p>
                 <p>
                   He was furious. Not just at the product — but at the fact that nothing in the
-                  marketplace experience had prepared him for the disappointment. No editorial review.
+                  store experience had prepared him for the disappointment. No editorial review.
                   No real ratings. No accountability.
                 </p>
                 <p>
-                  That weekend, he started building DigitalStore — a marketplace with one rule:
+                  That weekend, he started building DigitalStore — a store with one rule:
                   <span className="text-white font-semibold"> if it wouldn't make the cut for his own projects, it wouldn't be listed.</span>
                 </p>
               </div>
@@ -455,7 +455,7 @@ export default function AboutPage() {
                   className="text-white text-lg leading-relaxed font-medium mb-4"
                   style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                 >
-                  "I didn't want to build another marketplace. I wanted to build the one I
+                  "I didn't want to build another store. I wanted to build the one I
                   wished had existed when I needed it most."
                 </p>
                 <div className="flex items-center gap-3">
