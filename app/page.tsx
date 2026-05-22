@@ -294,7 +294,7 @@ export default function HomePage() {
               className="font-display text-4xl md:text-6xl font-extrabold text-white"
               style={{ fontFamily: "'Syne', sans-serif" }}
             >
-              Trending <span className="text-gradient">This Week</span>
+              Handpicked<span className="text-gradient">Resource</span>
             </h2>
             <Link href="/products" className="text-[#3B82F6] hover:text-white transition-colors font-semibold flex items-center gap-1">
               View all &#8594;
