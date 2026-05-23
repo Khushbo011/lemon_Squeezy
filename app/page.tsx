@@ -11,6 +11,25 @@ const rotatingWords = ["Creators", "Designers", "Developers", "Founders"]
 
 const featuredProducts = [
   {
+    id: "karvo-crm",
+    title: "Karvo CRM SaaS",
+    creator: "karvocrm",
+    category: "SaaS",
+    price: 99,
+    originalPrice: 199,
+    rating: 5,
+    reviewCount: 312,
+    isHot: true,
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=220&fit=crop&auto=format",
+    checkoutUrl: "https://www.digistore24.com/product/REPLACE_WITH_YOUR_PRODUCT_ID",
+    features: [
+      "Access to Karvo CRM dashboard",
+      "Features like contact management, sales automation, reporting",
+      "Delivery: digital access after purchase via email link"
+    ],
+    delivery: "Digital access after purchase via email link"
+  },
+  {
     id: "1",
     title: "Nebula UI Kit",
     creator: "designpro",
@@ -21,63 +40,14 @@ const featuredProducts = [
     reviewCount: 128,
     isHot: true,
     image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=220&fit=crop&auto=format",
-    checkoutUrl: "https://digitalnestt.lemonsqueezy.com/checkout/buy/f83d063a-7742-4d82-b26b-a918dd0cd42d"
+    checkoutUrl: "https://digitalnestt.lemonsqueezy.com/checkout/buy/f83d063a-7742-4d82-b26b-a918dd0cd42d",
+    features: [
+      "100+ Premium UI Components",
+      "Fully customizable Figma files",
+      "Clean light & dark mode designs"
+    ],
+    delivery: "Digital download link sent instantly via email"
   },
-  // {
-  //   id: "2",
-  //   title: "Framer Portfolio",
-  //   creator: "webcrafter",
-  //   category: "Framer",
-  //   price: 99,
-  //   rating: 4,
-  //   reviewCount: 86,
-  //   isNew: true,
-  //   image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=400&h=220&fit=crop&auto=format",
-  // },
-  // {
-  //   id: "3",
-  //   title: "3D Icon Pack Pro",
-  //   creator: "iconmaster",
-  //   category: "Icons",
-  //   price: 99,
-  //   originalPrice: 39,
-  //   rating: 5,
-  //   reviewCount: 234,
-  //   image: "https://images.unsplash.com/photo-1617042375876-a13e36732a04?w=400&h=220&fit=crop&auto=format",
-  // },
-  // {
-  //   id: "4",
-  //   title: "Notion Dashboard",
-  //   creator: "productivity",
-  //   category: "Notion",
-  //   price: 99,
-  //   rating: 4,
-  //   reviewCount: 67,
-  //   isNew: true,
-  //   image: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&h=220&fit=crop&auto=format",
-  // },
-  // {
-  //   id: "5",
-  //   title: "Display Sans Pro",
-  //   creator: "typefoundry",
-  //   category: "Fonts",
-  //   price: 99,
-  //   rating: 5,
-  //   reviewCount: 156,
-  //   image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=400&h=220&fit=crop&auto=format",
-  // },
-  // {
-  //   id: "6",
-  //   title: "SaaS Landing Kit",
-  //   creator: "landinglab",
-  //   category: "Landing",
-  //   price: 299,
-  //   originalPrice: 149,
-  //   rating: 5,
-  //   reviewCount: 312,
-  //   isHot: true,
-  //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=220&fit=crop&auto=format",
-  // },
   {
     id: "7",
     title: "Top 5 AI Tools",
@@ -89,7 +59,13 @@ const featuredProducts = [
     reviewCount: 845,
     isHot: true,
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
-    checkoutUrl: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link"
+    checkoutUrl: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+    features: [
+      "Curated list of top 5 AI productivity tools",
+      "Step-by-step video setup tutorials",
+      "Lifetime updates for new AI tools"
+    ],
+    delivery: "Digital access link delivered via email"
   },
 ]
 

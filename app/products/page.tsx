@@ -201,6 +201,25 @@ import { Footer } from "@/components/footer"
 
 const allProducts = [
   {
+    id: "karvo-crm",
+    title: "Karvo CRM SaaS",
+    creator: "karvocrm",
+    category: "SaaS",
+    price: 99,
+    originalPrice: 199,
+    rating: 5,
+    reviewCount: 312,
+    isHot: true,
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=220&fit=crop&auto=format",
+    checkoutUrl: "https://www.digistore24.com/product/REPLACE_WITH_YOUR_PRODUCT_ID",
+    features: [
+      "Access to Karvo CRM dashboard",
+      "Features like contact management, sales automation, reporting",
+      "Delivery: digital access after purchase via email link"
+    ],
+    delivery: "Digital access after purchase via email link"
+  },
+  {
     id: "1",
     title: "Nebula UI Kit",
     creator: "designpro",
@@ -214,6 +233,12 @@ const allProducts = [
       "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=220&fit=crop&auto=format",
     checkoutUrl:
       "https://digitalnestt.lemonsqueezy.com/checkout/buy/f83d063a-7742-4d82-b26b-a918dd0cd42d",
+    features: [
+      "100+ Premium UI Components",
+      "Fully customizable Figma files",
+      "Clean light & dark mode designs"
+    ],
+    delivery: "Digital download link sent instantly via email"
   },
   {
     id: "2",
@@ -227,6 +252,12 @@ const allProducts = [
     image:
       "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=400&h=220&fit=crop&auto=format",
     checkoutUrl: "", // ❌ missing = safe handled
+    features: [
+      "5+ Responsive Framer pages",
+      "Interactive animations & transitions",
+      "SEO optimized structure"
+    ],
+    delivery: "Framer remix link sent via email after purchase"
   },
   {
     id: "7",
@@ -242,6 +273,12 @@ const allProducts = [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
     checkoutUrl:
       "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+    features: [
+      "Curated list of top 5 AI productivity tools",
+      "Step-by-step video setup tutorials",
+      "Lifetime updates for new AI tools"
+    ],
+    delivery: "Digital access link delivered via email"
   },
 ]
 
@@ -273,13 +310,13 @@ export default function ProductsPage() {
         <div className="flex gap-3 mb-8">
           <button
             onClick={() => setViewMode("grid")}
-            className="px-4 py-2 rounded bg-blue-500 text-white"
+            className="px-4 py-2 rounded bg-blue-500 text-white cursor-pointer"
           >
             Grid
           </button>
           <button
             onClick={() => setViewMode("list")}
-            className="px-4 py-2 rounded bg-gray-700 text-white"
+            className="px-4 py-2 rounded bg-gray-700 text-white cursor-pointer"
           >
             List
           </button>
@@ -328,6 +365,8 @@ function ProductCard({
   reviewCount,
   image,
   checkoutUrl,
+  features,
+  delivery,
 }: any) {
   const handleBuy = () => {
     if (!checkoutUrl) {
@@ -339,33 +378,55 @@ function ProductCard({
   }
 
   return (
-    <div className="bg-white/5 p-4 rounded-xl text-white">
+    <div className="bg-white/5 p-5 rounded-xl text-white flex flex-col justify-between h-full">
+      <div>
+        <img src={image} className="rounded-lg h-40 w-full object-cover mb-4" />
 
-      <img src={image} className="rounded-lg h-40 w-full object-cover" />
+        <h3 className="font-bold text-lg">{title}</h3>
+        <p className="text-sm text-gray-400 mb-2">by @{creator}</p>
 
-      <h3 className="mt-3 font-bold">{title}</h3>
-      <p className="text-sm text-gray-400">by @{creator}</p>
+        {/* RATING */}
+        <div className="flex items-center gap-1 mb-3">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <Star
+              key={i}
+              size={14}
+              className={i <= rating ? "text-yellow-400 fill-yellow-400" : "text-gray-600"}
+            />
+          ))}
+          <span className="text-xs text-gray-400">({reviewCount})</span>
+        </div>
 
-      {/* RATING */}
-      <div className="flex items-center gap-1 mt-2">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <Star
-            key={i}
-            size={14}
-            className={i <= rating ? "text-yellow-400" : "text-gray-600"}
-          />
-        ))}
-        <span className="text-xs text-gray-400">({reviewCount})</span>
+        <div className="text-blue-400 font-bold text-xl mb-4">${price}</div>
+
+        {/* FEATURES - CRITICAL FOR DIGISTORE */}
+        {features && features.length > 0 && (
+          <div className="border-t border-white/5 pt-3 mb-3">
+            <p className="text-xs text-gray-400 uppercase font-bold tracking-wider mb-2">What you receive:</p>
+            <ul className="text-xs text-gray-300 space-y-1.5 pl-4 list-disc">
+              {features.map((f: string, idx: number) => (
+                <li key={idx}>{f}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
-      <div className="mt-2 text-blue-400 font-bold">${price}</div>
+      <div>
+        {/* DELIVERY FORMAT - CRITICAL FOR DIGISTORE */}
+        {delivery && (
+          <div className="text-[11px] text-cyan-400 bg-cyan-500/5 py-1.5 px-2.5 rounded border border-cyan-500/10 font-medium mb-3">
+            Format: {delivery}
+          </div>
+        )}
 
-      <button
-        onClick={handleBuy}
-        className="mt-3 w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500"
-      >
-        Buy Now
-      </button>
+        <button
+          onClick={handleBuy}
+          className="w-full py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 font-bold text-sm"
+        >
+          Buy Now
+        </button>
+      </div>
     </div>
   )
 }
@@ -377,6 +438,8 @@ function ProductListCard({
   creator,
   price,
   checkoutUrl,
+  features,
+  delivery,
 }: any) {
   const handleBuy = () => {
     if (!checkoutUrl) {
@@ -388,24 +451,37 @@ function ProductListCard({
   }
 
   return (
-    <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl text-white">
-
-      <div>
-        <h3 className="font-bold">{title}</h3>
-        <p className="text-sm text-gray-400">@{creator}</p>
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white/5 rounded-xl text-white gap-4">
+      <div className="flex-1">
+        <h3 className="font-bold text-lg">{title}</h3>
+        <p className="text-sm text-gray-400 mb-3">by @{creator}</p>
+        
+        {features && features.length > 0 && (
+          <div className="mt-3 mb-2">
+            <p className="text-xs text-gray-400 uppercase font-bold tracking-wider mb-2">What you receive:</p>
+            <ul className="text-xs text-gray-300 space-y-1 pl-4 list-disc">
+              {features.map((f: string, idx: number) => (
+                <li key={idx}>{f}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
-      <div className="flex items-center gap-4">
-        <span className="text-blue-400 font-bold">${price}</span>
-
+      <div className="flex flex-col items-end gap-3 self-stretch md:self-auto justify-between">
+        <div className="text-blue-400 font-bold text-lg">${price}</div>
+        {delivery && (
+          <div className="text-[11px] text-cyan-400 bg-cyan-500/5 py-1 px-2.5 rounded border border-cyan-500/10">
+            Format: {delivery}
+          </div>
+        )}
         <button
           onClick={handleBuy}
-          className="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500"
+          className="w-full md:w-auto px-6 py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 font-bold text-sm"
         >
-          Buy
+          Buy Now
         </button>
       </div>
-
     </div>
   )
 }

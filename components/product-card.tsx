@@ -18,6 +18,8 @@ interface ProductCardProps {
   isNew?: boolean
   isHot?: boolean
   checkoutUrl?: string
+  features?: string[]
+  delivery?: string
 }
 
 export function ProductCard({
@@ -33,6 +35,8 @@ export function ProductCard({
   isNew,
   isHot,
   checkoutUrl,
+  features,
+  delivery,
 }: ProductCardProps) {
 
   const [isLoading, setIsLoading] = useState(false)
@@ -172,84 +176,108 @@ useEffect(() => {
       </div>
 
       {/* CONTENT */}
-      <div className="p-5 flex flex-col flex-1">
+      <div className="p-5 flex flex-col flex-1 justify-between">
+        <div>
+          <h3 className="text-lg font-bold text-white">
+            {title}
+          </h3>
 
-        <h3 className="text-lg font-bold text-white">
-          {title}
-        </h3>
+          <p className="text-sm text-gray-400 mb-3">
+            by @{creator}
+          </p>
 
-        <p className="text-sm text-gray-400 mb-3">
-          by @{creator}
-        </p>
-
-        {/* RATING */}
-        <div className="flex items-center gap-1 mb-3">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <Star
-              key={star}
-              size={16}
-              className={star <= rating ? "text-yellow-400 fill-yellow-400" : "text-gray-500"}
-            />
-          ))}
-          <span className="text-xs text-gray-400 ml-2">
-            ({reviewCount})
-          </span>
-        </div>
-
-        {/* PRICE */}
-        <div className="flex items-center gap-2 mb-5">
-          <span className="text-xl font-bold text-blue-400">
-            ${price}
-          </span>
-
-          {originalPrice && (
-            <span className="text-sm text-gray-500 line-through">
-              ${originalPrice}
+          {/* RATING */}
+          <div className="flex items-center gap-1 mb-3">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <Star
+                key={star}
+                size={16}
+                className={star <= rating ? "text-yellow-400 fill-yellow-400" : "text-gray-500"}
+              />
+            ))}
+            <span className="text-xs text-gray-400 ml-2">
+              ({reviewCount})
             </span>
+          </div>
+
+          {/* PRICE */}
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-xl font-bold text-blue-400">
+              ${price}
+            </span>
+
+            {originalPrice && (
+              <span className="text-sm text-gray-500 line-through">
+                ${originalPrice}
+              </span>
+            )}
+          </div>
+
+          {/* FEATURES - CRITICAL FOR DIGISTORE */}
+          {features && features.length > 0 && (
+            <div className="border-t border-white/5 pt-3 mb-4">
+              <p className="text-xs text-gray-400 uppercase font-bold tracking-wider mb-2">What you receive:</p>
+              <ul className="text-xs text-gray-300 space-y-1.5 pl-4 list-disc">
+                {features.map((f, idx) => (
+                  <li key={idx}>{f}</li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
-        {/* ❤️ WISHLIST */}
-<button
-  onClick={handleWishlist}
-  className="absolute top-4 left-4 z-20"
->
-  <Heart
-    size={20}
-    className={`transition-all ${
-      liked ? "text-red-500 fill-red-500" : "text-white"
-    }`}
-  />
-</button>
-{/* ADD TO CART */}
-<button
-  onClick={handleCart}
-  className={`w-full py-3 mb-3 rounded-xl font-semibold ${
-    inCart
-      ? "bg-green-500 text-white"
-      : "bg-white/10 text-white hover:bg-white/20"
-  }`}
->
-  {inCart ? "✅ Added to Cart" : "🛒 Add to Cart"}
-</button>
 
-{/* BUY NOW */}
-<button
-  onClick={handleBuyNow}
-  disabled={isLoading}
-  className="w-full py-3 rounded-xl font-bold text-white"
-  style={{
-    background: "linear-gradient(135deg,#3B82F6,#06B6D4)",
-  }}
->
-  {isLoading ? (
-    <span className="flex items-center justify-center gap-2">
-      <Loader2 className="animate-spin" size={18} />
-      Opening...
-    </span>
-  ) : (
-    "Buy Now →"
-  )}
-</button>
+        <div>
+          {/* DELIVERY FORMAT - CRITICAL FOR DIGISTORE */}
+          {delivery && (
+            <div className="text-[11px] text-cyan-400 bg-cyan-500/5 py-1.5 px-2.5 rounded border border-cyan-500/10 font-medium mb-3">
+              Format: {delivery}
+            </div>
+          )}
+
+          {/* ❤️ WISHLIST */}
+          <button
+            onClick={handleWishlist}
+            className="absolute top-4 left-4 z-20 cursor-pointer"
+          >
+            <Heart
+              size={20}
+              className={`transition-all ${
+                liked ? "text-red-500 fill-red-500" : "text-white"
+              }`}
+            />
+          </button>
+
+          {/* ADD TO CART */}
+          <button
+            onClick={handleCart}
+            className={`w-full py-3 mb-3 rounded-xl font-semibold cursor-pointer ${
+              inCart
+                ? "bg-green-500 text-white"
+                : "bg-white/10 text-white hover:bg-white/20"
+            }`}
+          >
+            {inCart ? "✅ Added to Cart" : "🛒 Add to Cart"}
+          </button>
+
+          {/* BUY NOW */}
+          <button
+            onClick={handleBuyNow}
+            disabled={isLoading}
+            className="w-full py-3 rounded-xl font-bold text-white cursor-pointer"
+            style={{
+              background: "linear-gradient(135deg,#3B82F6,#06B6D4)",
+            }}
+          >
+            {isLoading ? (
+              <span className="flex items-center justify-center gap-2">
+                <Loader2 className="animate-spin" size={18} />
+                Opening...
+              </span>
+            ) : (
+              "Buy Now →"
+            )}
+          </button>
+        </div>
 
       </div>
     </div>
