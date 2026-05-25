@@ -271,8 +271,9 @@ const allProducts = [
     isHot: true,
     image:
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
-    checkoutUrl:
-      "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+    // checkoutUrl:
+      // "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+        checkoutUrl: "/sales",
     features: [
       "Curated list of top 5 AI productivity tools",
       "Step-by-step video setup tutorials",

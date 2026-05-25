@@ -39,7 +39,9 @@ export default function CartPage() {
       title: "Top 5 AI Tools",
       price: 499,
       image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
-      buyLink: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+      // buyLink: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+      buyLink: "/sales",
+      
     },
   ]
 
