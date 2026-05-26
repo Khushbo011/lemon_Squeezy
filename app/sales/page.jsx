@@ -159,9 +159,9 @@ export default function ProductPage() {
             <span className="text-5xl font-bold text-cyan-400">
               {product.price}
             </span>
-            <span className="bg-green-500/20 text-green-400 px-4 py-2 rounded-full">
-              SAVE 80%
-            </span>
+            {/* <span className="bg-green-500/20 text-green-400 px-4 py-2 rounded-full"> */}
+              
+            {/* </span> */}
           </div>
 
           <div className="mt-8 space-y-3">
