@@ -64,7 +64,7 @@ const featuredProducts = [
     features: [
       "Curated list of top 5 AI productivity tools",
       "Step-by-step video setup tutorials",
-      "Lifetime updates for new AI tools"
+      "Anytimeupdates for new AI tools"
     ],
     delivery: "Digital access link delivered via email"
   },

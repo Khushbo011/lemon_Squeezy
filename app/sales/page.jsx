@@ -38,7 +38,7 @@ const products = [
       "✅ Ready-To-Use Prompt Templates",
       "✅ AI Automation Workflow Systems",
       "✅ Beginner Friendly Setup",
-      "✅ Lifetime Access Included",
+      "✅ Anytime Access Included",
       "✅ Free Future Updates",
     ],
     includes: [

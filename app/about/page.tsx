@@ -78,7 +78,7 @@ const values = [
   },
   {
     icon: Zap,
-    title: "Lifetime Access",
+    title: "Anytime Access",
     desc: "Buy once, own forever. No subscriptions, no expiring licenses. Your library is yours — permanently.",
     gradient: "linear-gradient(135deg, #06B6D4, #10B981)",
   },
@@ -176,7 +176,7 @@ const pressLogos = [
 
 const faqs = [
   {
-    q: "Do I get lifetime access to what I buy?",
+    q: "Do I get Anytimeaccess to what I buy?",
     a: "Yes — every purchase is yours forever. No subscriptions, no expiry dates. If a creator updates their product, you get those updates free.",
   },
   {

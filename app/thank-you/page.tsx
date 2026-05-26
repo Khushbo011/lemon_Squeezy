@@ -117,7 +117,7 @@ function ThankYouContent() {
             </div>
 
             <span className="px-4 py-1.5 text-xs font-bold bg-blue-500/10 border border-blue-500/30 text-blue-400 rounded-full">
-              Lifetime Access
+              AnytimeAccess
             </span>
           </div>
 
@@ -133,7 +133,7 @@ function ThankYouContent() {
               <li className="text-sm">✔ AI Marketing Automation Kit</li>
               <li className="text-sm">✔ AI Resume Builder System</li>
               <li className="text-sm">✔ AI Content Writing Bundle</li>
-              <li className="text-sm">✔ Lifetime Updates & Access</li>
+              <li className="text-sm">✔ AnytimeUpdates & Access</li>
             </ul>
           </div>
 
