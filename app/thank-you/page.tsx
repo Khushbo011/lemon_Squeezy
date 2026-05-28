@@ -84,21 +84,25 @@ function ThankYouContent() {
         </div>
 
         {/* Heading */}
-        <h1
-          className="text-4xl md:text-6xl font-extrabold mb-4"
-          style={{
-            background: "linear-gradient(135deg, #3B82F6 0%, #06B6D4 50%, #10B981 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
-          Thank You for Your Purchase!
-        </h1>
+       <h1
+  className="text-4xl md:text-6xl font-extrabold mb-4"
+  style={{
+    background: "linear-gradient(135deg, #3B82F6 0%, #06B6D4 50%, #10B981 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+  }}
+>
+  Thank You for Your Purchase!
+</h1>
 
-        <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-xl mx-auto">
-          Your transaction was successful. You now have access to{" "}
-          <span className="text-blue-400 font-semibold">{productName}</span>.
-        </p>
+<p className="text-gray-500 mb-4">
+  The debit is made by Digistore24.
+</p>
+
+<p className="text-lg md:text-xl text-gray-400 mb-10 max-w-xl mx-auto">
+  Your transaction was successful. You now have access to{" "}
+  <span className="text-blue-400 font-semibold">{productName}</span>.
+</p>
 
         {/* PRODUCT CARD */}
         <div className="glass-card p-8 md:p-10 mb-10 text-left w-full"
