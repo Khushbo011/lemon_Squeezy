@@ -41,6 +41,7 @@ export function Navbar({ cartCount = 0 }: NavbarProps) {
     { href: "/", label: "Explore" },
     { href: "/products", label: "Products" },
     { href: "/category/ui-kits", label: "Category" },
+     { href: "/sales", label: "Sales Page" },
     { href: "/about", label: "About Us" },
     { href: "/disclaimer", label: "Disclaimer" }
   ]

@@ -234,14 +234,15 @@ const allProducts = [
     creator: "edumaster",
     category: "Education",
     price: 499,
-    originalPrice: 199,
+    // originalPrice: 199,
     rating: 5,
     reviewCount: 845,
     isHot: true,
     image:
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
-    checkoutUrl:
-      "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+    // checkoutUrl:
+    //   "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
+      checkoutUrl: "/sales",
   },
 ]
 

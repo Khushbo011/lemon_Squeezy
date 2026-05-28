@@ -84,12 +84,13 @@ const featuredProducts = [
     creator: "edumaster",
     category: "Education",
     price: 499,
-    originalPrice: 199,
+    // originalPrice: 199,
     rating: 5,
     reviewCount: 845,
     isHot: true,
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
-    checkoutUrl: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link"
+    // checkoutUrl: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link"
+      checkoutUrl: "/sales",
   },
 ]
 
@@ -178,7 +179,7 @@ export default function HomePage() {
             className="font-display text-5xl md:text-7xl lg:text-[90px] font-extrabold leading-[0.9] tracking-[-0.04em] mb-8"
             style={{ fontFamily: "'Syne', sans-serif" }}
           >
-            {/* <span className="text-white block">The Marketplace</span>
+            {/* <span className="text-white block">The Store</span>
             <span className="text-white block mt-2">
               Built for{" "}
               <span
@@ -328,7 +329,7 @@ export default function HomePage() {
               className="font-display text-4xl md:text-6xl font-extrabold text-white"
               style={{ fontFamily: "'Syne', sans-serif" }}
             >
-              Trending <span className="text-gradient">This Week</span>
+              Handpicked<span className="text-gradient">Resource</span>
             </h2>
             <Link href="/products" className="text-[#3B82F6] hover:text-white transition-colors font-semibold flex items-center gap-1">
               View all &#8594;

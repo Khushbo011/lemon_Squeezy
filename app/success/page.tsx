@@ -155,7 +155,7 @@ function SuccessContent() {
                 color: "#00F5FF",
               }}
             >
-              Lifetime Access
+              AnytimeAccess
             </div>
           </div>
 
