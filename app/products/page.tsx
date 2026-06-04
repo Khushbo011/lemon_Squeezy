@@ -280,6 +280,24 @@ const allProducts = [
     ],
     delivery: "Digital access link delivered via email"
   },
+  {
+    id: "ai-business-blueprint",
+    title: "The Beginner's AI Business Blueprint",
+    creator: "AI Business Academy",
+    category: "eBook",
+    price: 49,
+    rating: 5,
+    reviewCount: 154,
+    isHot: true,
+    image: "/images/ai-business-blueprint-cover.png",
+    checkoutUrl: "/sales/ai-business-blueprint",
+    features: [
+      "Foundations of Artificial Intelligence",
+      "Generative AI Explained",
+      "Monetizing AI Skills"
+    ],
+    delivery: "Digital eBook (PDF) download link sent instantly via email"
+  },
 ]
 
 /* ================= PAGE ================= */

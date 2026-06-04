@@ -41,7 +41,13 @@ export default function CartPage() {
       image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=220&fit=crop&auto=format",
       // buyLink: "https://drive.google.com/drive/folders/1ZshFscuQOkie64_mA87s1AxMQCZcGwQ9?usp=drive_link",
       buyLink: "/sales",
-      
+    },
+    {
+      id: "ai-business-blueprint",
+      title: "The Beginner's AI Business Blueprint",
+      price: 49,
+      image: "/images/ai-business-blueprint-cover.png",
+      buyLink: "/sales/ai-business-blueprint",
     },
   ]
 

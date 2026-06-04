@@ -29,23 +29,22 @@ const featuredProducts = [
     delivery: "Digital access after purchase via email link"
   },
   {
-    id: "1",
-    title: "Nebula UI Kit",
-    creator: "designpro",
-    category: "UI Kit",
-    price: 99,
-    // originalPrice: 59,
+    id: "ai-business-blueprint",
+    title: "The Beginner's AI Business Blueprint",
+    creator: "AI Business Academy",
+    category: "eBook",
+    price: 49,
     rating: 5,
-    reviewCount: 128,
+    reviewCount: 154,
     isHot: true,
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=220&fit=crop&auto=format",
-    checkoutUrl: "https://digitalnestt.lemonsqueezy.com/checkout/buy/f83d063a-7742-4d82-b26b-a918dd0cd42d",
+    image: "/images/ai-business-blueprint-cover.png",
+    checkoutUrl: "/sales/ai-business-blueprint",
     features: [
-      "100+ Premium UI Components",
-      "Fully customizable Figma files",
-      "Clean light & dark mode designs"
+      "Foundations of Artificial Intelligence",
+      "Generative AI Explained",
+      "Monetizing AI Skills"
     ],
-    delivery: "Digital download link sent instantly via email"
+    delivery: "Digital eBook (PDF) download link sent instantly via email"
   },
   {
     id: "7",
