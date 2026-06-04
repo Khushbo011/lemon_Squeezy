@@ -94,6 +94,9 @@ function ThankYouContent() {
         >
           Thank You For Your Purchase!
         </h1>
+        <p className="text-gray-500 mb-4">
+          The debit is made by Digistore24.
+        </p>
 
         <p className="text-gray-500 mb-4">
           Your order has been successfully completed.
