@@ -110,11 +110,10 @@ export default function ProductPage() {
                   width={300}
                   height={200}
                   alt="thumb"
-                  className={`rounded-xl h-[110px] object-cover border transition ${
-                    mainImage === img
+                  className={`rounded-xl h-[110px] object-cover border transition ${mainImage === img
                       ? "border-cyan-400"
                       : "border-white/10"
-                  }`}
+                    }`}
                 />
               </button>
             ))}
@@ -160,7 +159,7 @@ export default function ProductPage() {
               {product.price}
             </span>
             {/* <span className="bg-green-500/20 text-green-400 px-4 py-2 rounded-full"> */}
-              
+
             {/* </span> */}
           </div>
 
@@ -294,7 +293,7 @@ export default function ProductPage() {
         </div>
 
         {/* DISPUTE */}
-            <div
+        <div
           className="glass-card p-8"
           style={{
             background: "rgba(255, 255, 255, 0.03)",

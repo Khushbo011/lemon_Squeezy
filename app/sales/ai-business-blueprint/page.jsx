@@ -39,7 +39,7 @@ const products = [
       "Step-by-Step Learning",
       "Future-Proof Skills",
       "Digital Download",
-      "Lifetime Access",
+      " Anytime Accesss",
     ],
     includes: [
       "Foundations of Artificial Intelligence",
@@ -130,11 +130,10 @@ export default function ProductPage() {
                   width={300}
                   height={200}
                   alt="thumb"
-                  className={`rounded-xl h-[110px] object-cover border transition ${
-                    mainImage === img
-                      ? "border-cyan-400"
-                      : "border-white/10"
-                  }`}
+                  className={`rounded-xl h-[110px] object-cover border transition ${mainImage === img
+                    ? "border-cyan-400"
+                    : "border-white/10"
+                    }`}
                 />
               </button>
             ))}
@@ -222,7 +221,7 @@ export default function ProductPage() {
                 <p className="text-gray-400 text-sm">A. No, digital PDF.</p>
               </div>
               <div>
-                <p className="font-bold text-white">Q. Will I get lifetime access?</p>
+                <p className="font-bold text-white">Q. Will I get Anytimne access?</p>
                 <p className="text-gray-400 text-sm">A. Yes.</p>
               </div>
               <div>
@@ -354,7 +353,7 @@ export default function ProductPage() {
         </div>
 
         {/* DISPUTE */}
-            <div
+        <div
           className="glass-card p-8"
           style={{
             background: "rgba(255, 255, 255, 0.03)",

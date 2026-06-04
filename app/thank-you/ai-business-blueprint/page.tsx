@@ -84,25 +84,25 @@ function ThankYouContent() {
         </div>
 
         {/* Heading */}
-       <h1
-  className="text-4xl md:text-6xl font-extrabold mb-4"
-  style={{
-    background: "linear-gradient(135deg, #3B82F6 0%, #06B6D4 50%, #10B981 100%)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-  }}
->
-  Thank You For Your Purchase!
-</h1>
+        <h1
+          className="text-4xl md:text-6xl font-extrabold mb-4"
+          style={{
+            background: "linear-gradient(135deg, #3B82F6 0%, #06B6D4 50%, #10B981 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          Thank You For Your Purchase!
+        </h1>
 
-<p className="text-gray-500 mb-4">
-  Your order has been successfully completed.
-</p>
+        <p className="text-gray-500 mb-4">
+          Your order has been successfully completed.
+        </p>
 
-<p className="text-lg md:text-xl text-gray-400 mb-10 max-w-xl mx-auto">
-  Your transaction was successful. You now have access to{" "}
-  <span className="text-blue-400 font-semibold">{productName}</span>.
-</p>
+        <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-xl mx-auto">
+          Your transaction was successful. You now have access to{" "}
+          <span className="text-blue-400 font-semibold">{productName}</span>.
+        </p>
 
         {/* PRODUCT CARD */}
         <div className="glass-card p-8 md:p-10 mb-10 text-left w-full"
@@ -122,7 +122,7 @@ function ThankYouContent() {
             </div>
 
             <span className="px-4 py-1.5 text-xs font-bold bg-blue-500/10 border border-blue-500/30 text-blue-400 rounded-full">
-              Lifetime Access
+              Anytime Access
             </span>
           </div>
 
@@ -135,7 +135,7 @@ function ThankYouContent() {
             <ul className="grid sm:grid-cols-2 gap-3 text-gray-300">
               <li className="text-sm">✔ Instant access granted</li>
               <li className="text-sm">✔ Download link sent</li>
-              <li className="text-sm">✔ Lifetime access</li>
+              <li className="text-sm">✔ Anytime access</li>
               <li className="text-sm">✔ Start learning immediately</li>
             </ul>
           </div>
