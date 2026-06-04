@@ -314,7 +314,7 @@ export default function AboutPage() {
           {/* Social proof strip */}
           <div className="flex flex-wrap items-center justify-center gap-8">
             <div className="flex -space-x-3">
-              {["1","5","9","12","25","32","44"].map((n) => (
+              {["1", "5", "9", "12", "25", "32", "44"].map((n) => (
                 <img
                   key={n}
                   src={`https://i.pravatar.cc/40?img=${n}`}
@@ -326,7 +326,7 @@ export default function AboutPage() {
             </div>
             <div className="text-left">
               <div className="flex items-center gap-1 mb-1">
-                {[1,2,3,4,5].map(s => <Star key={s} size={14} className="fill-[#F59E0B] text-[#F59E0B]" />)}
+                {[1, 2, 3, 4, 5].map(s => <Star key={s} size={14} className="fill-[#F59E0B] text-[#F59E0B]" />)}
                 <span className="text-white font-bold text-sm ml-1">4.9/5</span>
               </div>
               <p className="text-[#94A3B8] text-sm" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
@@ -758,7 +758,7 @@ export default function AboutPage() {
 
             <div className="relative z-10">
               <div className="flex items-center gap-1 mb-8">
-                {[1,2,3,4,5].map(s => <Star key={s} size={20} className="fill-[#F59E0B] text-[#F59E0B]" />)}
+                {[1, 2, 3, 4, 5].map(s => <Star key={s} size={20} className="fill-[#F59E0B] text-[#F59E0B]" />)}
               </div>
 
               <Quote size={32} className="text-[#3B82F6] mb-6 opacity-60" />
