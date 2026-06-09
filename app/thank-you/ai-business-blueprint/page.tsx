@@ -162,14 +162,16 @@ function ThankYouContent() {
             </p>
             
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1IO2sdL99v94lvH2IW5eXgfdogyYNHVPO/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full sm:w-auto mx-auto py-4 px-8 rounded-xl font-bold text-black text-center text-sm uppercase tracking-wider"
               style={{
                 background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
                 maxWidth: "300px"
               }}
             >
-              [PRODUCT ACCESS LINK]
+              Access Blueprint Now
             </a>
 
             <p className="text-gray-400 text-xs mt-6">
