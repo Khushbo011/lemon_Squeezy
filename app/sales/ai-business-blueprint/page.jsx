@@ -233,10 +233,15 @@ export default function ProductPage() {
 
           <button
             onClick={() => router.push(product.checkoutUrl)}
-            className="mt-10 w-full bg-gradient-to-r from-blue-500 to-cyan-400 px-6 py-5 rounded-2xl font-bold text-xl hover:scale-[1.02] transition-transform"
+            className="mt-10 w-full bg-gradient-to-r from-blue-500 to-cyan-400 px-6 py-5 rounded-2xl font-bold text-xl hover:scale-[1.02] transition-transform shadow-lg shadow-blue-500/20"
           >
             Buy Now • Instant Access 🚀
           </button>
+
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Backed by our <strong>60-Day Money-Back Guarantee</strong></span>
+          </div>
         </div>
       </div>
 

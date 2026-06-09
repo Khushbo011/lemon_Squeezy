@@ -130,6 +130,38 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Trust & Compliance */}
+        <div className="mb-14 pb-14" style={{ borderBottom: "1px solid rgba(59, 130, 246, 0.1)" }}>
+          <h4 className="text-white font-bold mb-8 text-center text-lg" style={{ fontFamily: "'Syne', sans-serif" }}>
+            Trust & Compliance
+          </h4>
+          <div className="flex flex-wrap justify-center gap-10 items-center">
+            <div className="flex flex-col items-center text-center gap-2 max-w-[200px]">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-blue-500/10 border border-blue-500/20 text-blue-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <p className="text-white font-bold text-sm">60-Day Money-Back Guarantee</p>
+              <p className="text-[#94A3B8] text-xs">Risk-free purchase</p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center gap-2 max-w-[200px]">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <p className="text-white font-bold text-sm">Secure Payment</p>
+              <p className="text-[#94A3B8] text-xs">Encrypted transactions</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center gap-2 max-w-[200px]">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+              </div>
+              <p className="text-white font-bold text-sm">Customer Support</p>
+              <p className="text-[#94A3B8] text-xs">We are here to help</p>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div
           className="flex flex-col md:flex-row items-center justify-between pt-8 gap-4"

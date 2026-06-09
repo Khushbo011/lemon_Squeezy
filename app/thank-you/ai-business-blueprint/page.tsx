@@ -153,22 +153,34 @@ function ThankYouContent() {
             </p>
           </div>
 
-          {/* CTA */}
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-
+          {/* PRODUCT ACCESS */}
+          <div className="mt-8 bg-blue-500/10 border border-blue-500/30 p-6 rounded-2xl text-center">
+            <h2 className="text-xl font-bold text-white mb-2">Access Your Product</h2>
+            <p className="text-gray-300 text-sm mb-6">
+              Thank you for your purchase.<br />
+              You can access your product here:
+            </p>
+            
             <a
               href="#"
-              className="flex-1 py-4 rounded-xl font-bold text-black text-center text-sm uppercase tracking-wider"
+              className="block w-full sm:w-auto mx-auto py-4 px-8 rounded-xl font-bold text-black text-center text-sm uppercase tracking-wider"
               style={{
                 background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+                maxWidth: "300px"
               }}
             >
-              Download eBook
+              [PRODUCT ACCESS LINK]
             </a>
 
+            <p className="text-gray-400 text-xs mt-6">
+              If you experience any issues, please <Link href="/contact-page" className="text-blue-400 hover:underline">contact support</Link>.
+            </p>
+          </div>
+
+          <div className="mt-6 flex justify-center">
             <Link
               href="/"
-              className="px-6 py-4 border border-white/10 text-white rounded-xl text-sm flex items-center justify-center gap-2"
+              className="px-6 py-4 border border-white/10 text-white rounded-xl text-sm flex items-center justify-center gap-2 hover:bg-white/5 transition-colors"
             >
               Go Back To Store
             </Link>
