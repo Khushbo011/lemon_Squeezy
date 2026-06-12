@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import {
   Shield,
   Mail,
   MapPin,
   User,
   FileText,
   CheckCircle,
+  Lock,
+  MessageCircle,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -238,10 +239,65 @@ export default function ProductPage() {
             Buy Now • Instant Access 🚀
           </button>
 
-          <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-400">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>Backed by our <strong>60-Day Money-Back Guarantee</strong></span>
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm text-cyan-300 bg-cyan-900/20 px-4 py-2 rounded-full border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]">
+            <span className="drop-shadow-[0_0_5px_rgba(6,182,212,0.8)]">🛡</span>
+            <span className="font-medium tracking-wide">Protected by our <strong>60-Day Money-Back Guarantee.</strong></span>
           </div>
+        </div>
+      </div>
+
+      {/* TRUST & COMPLIANCE SECTION */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="text-center mb-12">
+          <div className="inline-flex gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 mb-4 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
+            <Shield size={16} className="text-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+            <span className="text-blue-400 text-sm font-semibold tracking-wider uppercase">
+              Trust & Compliance
+            </span>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Card 1 */}
+          <div className="group bg-[#0f172a]/80 border border-white/10 hover:border-blue-500/50 rounded-3xl p-8 backdrop-blur-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:-translate-y-1">
+            <div className="bg-blue-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 border border-blue-500/20 group-hover:bg-blue-500/20 transition-colors">
+              <Shield size={28} className="text-blue-400 drop-shadow-[0_0_10px_rgba(59,130,246,0.6)]" />
+            </div>
+            <h3 className="text-xl font-bold mb-3 text-white group-hover:text-blue-300 transition-colors">60-Day Money-Back Guarantee</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Risk-free purchase. If you're not satisfied, request a refund within 60 days according to our refund policy.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="group bg-[#0f172a]/80 border border-white/10 hover:border-cyan-500/50 rounded-3xl p-8 backdrop-blur-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] hover:-translate-y-1">
+            <div className="bg-cyan-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/20 group-hover:bg-cyan-500/20 transition-colors">
+              <Lock size={28} className="text-cyan-400 drop-shadow-[0_0_10px_rgba(6,182,212,0.6)]" />
+            </div>
+            <h3 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-300 transition-colors">Secure Payment</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Encrypted transactions and secure checkout for complete payment protection.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="group bg-[#0f172a]/80 border border-white/10 hover:border-indigo-500/50 rounded-3xl p-8 backdrop-blur-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(99,102,241,0.15)] hover:-translate-y-1">
+            <div className="bg-indigo-500/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 border border-indigo-500/20 group-hover:bg-indigo-500/20 transition-colors">
+              <MessageCircle size={28} className="text-indigo-400 drop-shadow-[0_0_10px_rgba(99,102,241,0.6)]" />
+            </div>
+            <h3 className="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors">Customer Support</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Fast email support and assistance whenever you need help.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-500">
+          <a href="#" className="hover:text-gray-300 transition-colors">Refund Policy</a>
+          <span className="text-white/20">•</span>
+          <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
+          <span className="text-white/20">•</span>
+          <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>
         </div>
       </div>
 
