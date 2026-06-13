@@ -25,7 +25,7 @@ const products = [
       "/images/ai-automation-business-blueprint-cover.png",
       "/images/ai-automation-business-blueprint-cover.png",
     ],
-    price: "$49",
+    price: "$149",
     badge: "🔥 NEW RELEASE",
     rating: "5.0/5",
     students: "Available Now",
