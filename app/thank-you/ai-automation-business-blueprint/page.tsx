@@ -118,7 +118,7 @@ function ThankYouContent() {
             <div>
               <p className="text-xs text-gray-500 uppercase mb-1">Product</p>
               <h2 className="text-2xl font-bold">{productName}</h2>
-              <p className="text-blue-400 font-bold mt-1">$49</p>
+              <p className="text-blue-400 font-bold mt-1">$149</p>
             </div>
 
             <span className="px-4 py-1.5 text-xs font-bold bg-blue-500/10 border border-blue-500/30 text-blue-400 rounded-full">
@@ -160,7 +160,7 @@ function ThankYouContent() {
               Thank you for your purchase.<br />
               You can access your product here:
             </p>
-            
+
             <a
               href="https://drive.google.com/file/d/1xsioPSeHMfrhVbvAqIarj182PTfVpRvG/view?usp=drive_link"
               target="_blank"
