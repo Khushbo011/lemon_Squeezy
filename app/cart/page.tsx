@@ -52,7 +52,7 @@ export default function CartPage() {
     {
       id: "ai-automation-business-blueprint",
       title: "AI Automation Business Blueprint eBook",
-      price: 49,
+      price: 149,
       image: "/images/ai-automation-business-blueprint-cover.png",
       buyLink: "/sales/ai-automation-business-blueprint",
     },

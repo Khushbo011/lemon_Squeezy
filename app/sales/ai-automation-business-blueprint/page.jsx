@@ -72,7 +72,7 @@ const products = [
       "Actionable Business Strategies",
     ],
     checkoutUrl:
-      "/checkout?redirect=/thank-you/ai-automation-business-blueprint",
+      "/checkout",
   },
 ];
 

@@ -303,7 +303,7 @@ const allProducts = [
     title: "AI Automation Business Blueprint eBook",
     creator: "AI Business Academy",
     category: "eBook",
-    price: 49,
+    price: 149,
     rating: 5,
     reviewCount: 120,
     isHot: true,
