@@ -47,6 +47,24 @@ const featuredProducts = [
     delivery: "Digital eBook (PDF) download link sent instantly via email"
   },
   {
+    id: "ai-automation-business-blueprint",
+    title: "AI Automation Business Blueprint eBook",
+    creator: "AI Business Academy",
+    category: "eBook",
+    price: 49,
+    rating: 5,
+    reviewCount: 120,
+    isHot: true,
+    image: "/images/ai-automation-business-blueprint-cover.png",
+    checkoutUrl: "/sales/ai-automation-business-blueprint",
+    features: [
+      "Foundations of Artificial Intelligence",
+      "Generative AI Explained",
+      "Monetizing AI Skills"
+    ],
+    delivery: "Digital eBook (PDF) download link sent instantly via email"
+  },
+  {
     id: "7",
     title: "Top 5 AI Tools",
     creator: "edumaster",
