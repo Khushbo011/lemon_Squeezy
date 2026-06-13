@@ -24,7 +24,7 @@ function CheckoutContent() {
         </p>
 
         <button
-          // onClick={() => router.push(redirectUr?l)}
+          onClick={() => router.push(redirectUrl)}
           className="mt-8 w-full bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 hover:scale-[1.02] transition-all duration-300 px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/20"
         >
           Complete Purchase 🚀
