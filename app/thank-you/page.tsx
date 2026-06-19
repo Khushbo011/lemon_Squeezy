@@ -100,7 +100,7 @@ function ThankYouContent() {
         </p>
 
         <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-xl mx-auto">
-          Your transaction was successful. You now have access to{" "}
+          Your transaction was successful. You can now download{" "}
           <span className="text-blue-400 font-semibold">{productName}</span>.
         </p>
 
@@ -121,7 +121,7 @@ function ThankYouContent() {
             </div>
 
             <span className="px-4 py-1.5 text-xs font-bold bg-blue-500/10 border border-blue-500/30 text-blue-400 rounded-full">
-              Anytime Access
+              24/7 Availability
             </span>
           </div>
 
@@ -137,7 +137,7 @@ function ThankYouContent() {
               <li className="text-sm">✔ AI Marketing Automation Kit</li>
               <li className="text-sm">✔ AI Resume Builder System</li>
               <li className="text-sm">✔ AI Content Writing Bundle</li>
-              <li className="text-sm">✔ Anytime Updates & Access</li>
+              <li className="text-sm">✔ 24/7 Updates & Availability</li>
             </ul>
           </div>
 
@@ -149,7 +149,7 @@ function ThankYouContent() {
             </h3>
 
             <p className="text-gray-300 text-sm">
-              This is a digital product. Your access details and download links
+              This is a digital product. Your product details and download links
               have been sent to your email. No physical delivery required.
             </p>
           </div>

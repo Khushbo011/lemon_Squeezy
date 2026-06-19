@@ -100,7 +100,7 @@ function ThankYouContent() {
         </p>
 
         <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-xl mx-auto">
-          Your transaction was successful. You now have access to{" "}
+          Your transaction was successful. You can now download{" "}
           <span className="text-blue-400 font-semibold">{productName}</span>.
         </p>
 
@@ -122,7 +122,7 @@ function ThankYouContent() {
             </div>
 
             <span className="px-4 py-1.5 text-xs font-bold bg-blue-500/10 border border-blue-500/30 text-blue-400 rounded-full">
-              Anytime Access
+              24/7 Availability
             </span>
           </div>
 
@@ -133,9 +133,9 @@ function ThankYouContent() {
             </h3>
 
             <ul className="grid sm:grid-cols-2 gap-3 text-gray-300">
-              <li className="text-sm">✔ Instant access granted</li>
+              <li className="text-sm">✔ Immediate availability granted</li>
               <li className="text-sm">✔ Download link sent</li>
-              <li className="text-sm">✔ Anytime access</li>
+              <li className="text-sm">✔ 24/7 availability</li>
               <li className="text-sm">✔ Start learning immediately</li>
             </ul>
           </div>
@@ -148,17 +148,17 @@ function ThankYouContent() {
             </h3>
 
             <p className="text-gray-300 text-sm">
-              This is a digital product. Your access details and download links
+              This is a digital product. Your product details and download links
               have been sent to your email. No physical delivery required.
             </p>
           </div>
 
           {/* PRODUCT ACCESS */}
           <div className="mt-8 bg-blue-500/10 border border-blue-500/30 p-6 rounded-2xl text-center">
-            <h2 className="text-xl font-bold text-white mb-2">Access Your Product</h2>
+            <h2 className="text-xl font-bold text-white mb-2">Get Your Product</h2>
             <p className="text-gray-300 text-sm mb-6">
               Thank you for your purchase.<br />
-              You can access your product here:
+              You can download your product here:
             </p>
 
             <a
@@ -171,7 +171,7 @@ function ThankYouContent() {
                 maxWidth: "300px"
               }}
             >
-              Access Blueprint Now
+              Download Blueprint Now
             </a>
 
             <p className="text-gray-400 text-xs mt-6">

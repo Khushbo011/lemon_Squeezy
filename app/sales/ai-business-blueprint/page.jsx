@@ -41,7 +41,7 @@ const products = [
       "Step-by-Step Learning",
       "Future-Proof Skills",
       "Digital Download",
-      " Anytime Accesss",
+      " 24/7 Availability",
     ],
     includes: [
       "Foundations of Artificial Intelligence",
@@ -99,7 +99,7 @@ export default function ProductPage() {
               🔒 Secure Checkout
             </span>
             <span className="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm">
-              ⚡ Instant Delivery
+              ⚡ Immediate Delivery
             </span>
           </div>
         </div>
@@ -223,12 +223,12 @@ export default function ProductPage() {
                 <p className="text-gray-400 text-sm">A. No, digital PDF.</p>
               </div>
               <div>
-                <p className="font-bold text-white">Q. Will I get Anytimne access?</p>
+                <p className="font-bold text-white">Q. Will I get unrestricted use?</p>
                 <p className="text-gray-400 text-sm">A. Yes.</p>
               </div>
               <div>
                 <p className="font-bold text-white">Q. How will I receive it?</p>
-                <p className="text-gray-400 text-sm">A. Instant digital delivery.</p>
+                <p className="text-gray-400 text-sm">A. Immediate digital delivery.</p>
               </div>
             </div>
           </div>
@@ -237,7 +237,7 @@ export default function ProductPage() {
             onClick={() => router.push(product.checkoutUrl)}
             className="mt-10 w-full bg-gradient-to-r from-blue-500 to-cyan-400 px-6 py-5 rounded-2xl font-bold text-xl hover:scale-[1.02] transition-transform shadow-lg shadow-blue-500/20"
           >
-            Buy Now • Instant Access 🚀
+            Buy Now • Unrestricted Use 🚀
           </button>
 
           <div className="mt-4 flex items-center justify-center gap-2 text-sm text-cyan-300 bg-cyan-900/20 px-4 py-2 rounded-full border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]">
@@ -436,7 +436,7 @@ export default function ProductPage() {
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             The European Commission provides a platform for online dispute
-            resolution (ODR), which you can access at{" "}
+            resolution (ODR), which you can find at{" "}
 
             <a
               href="https://ec.europa.eu/consumers/odr/"

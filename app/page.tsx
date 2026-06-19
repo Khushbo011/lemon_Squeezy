@@ -65,7 +65,7 @@ const featuredProducts = [
     delivery: "Digital eBook (PDF) download link sent instantly via email"
   },
   {
-    id: "7",
+    id: "7", 
     title: "Top 5 AI Tools",
     creator: "edumaster",
     category: "Education",

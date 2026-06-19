@@ -28,17 +28,17 @@ const products = [
     rating: "4.9/5",
     students: "12,000+ Customers",
     description:
-      "This premium AI bundle gives you access to the most powerful productivity and automation tools available online.",
+      "This premium AI bundle provides you with the most powerful productivity and automation tools available online.",
     longDescription:
       "Inside this bundle, you'll discover carefully selected AI tools, ready-to-use prompts, automation systems, tutorials, and workflows.",
     features: [
-      "✅ Access To 5 Premium AI Productivity Tools",
+      "✅ 5 Premium AI Productivity Tools",
       "✅ 5 Exclusive AI Video Tutorials Included",
       "✅ ChatGPT, Gemini, Claude, Meta & DeepSeek Guides",
       "✅ Ready-To-Use Prompt Templates",
       "✅ AI Automation Workflow Systems",
       "✅ Beginner Friendly Setup",
-      "✅ Anytime Access Included",
+      "✅ 24/7 Availability Included",
       "✅ Free Future Updates",
     ],
     includes: [
@@ -77,7 +77,7 @@ export default function ProductPage() {
               🔒 Secure Checkout
             </span>
             <span className="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm">
-              ⚡ Instant Delivery
+              ⚡ Immediate Delivery
             </span>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function ProductPage() {
             onClick={() => (window.location.href = product.checkoutUrl)}
             className="mt-8 w-full bg-gradient-to-r from-blue-500 to-cyan-400 px-6 py-5 rounded-2xl font-bold text-xl"
           >
-            Buy Now • Instant Access 🚀
+            Buy Now • Unrestricted Use 🚀
           </button>
         </div>
       </div>
@@ -314,7 +314,7 @@ export default function ProductPage() {
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             The European Commission provides a platform for online dispute
-            resolution (ODR), which you can access at{" "}
+            resolution (ODR), which you can find at{" "}
 
             <a
               href="https://ec.europa.eu/consumers/odr/"
