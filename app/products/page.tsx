@@ -201,24 +201,6 @@ import { Footer } from "@/components/footer"
 
 const allProducts = [
   {
-    id: "karvo-crm",
-    title: "Karvo CRM SaaS",
-    creator: "karvocrm",
-    category: "SaaS",
-    price: 99,
-    rating: 5,
-    reviewCount: 312,
-    isHot: true,
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=220&fit=crop&auto=format",
-    checkoutUrl: "https://www.digistore24.com/product/REPLACE_WITH_YOUR_PRODUCT_ID",
-    features: [
-      "Access to Karvo CRM dashboard",
-      "Features like contact management, sales automation, reporting",
-      "Delivery: digital access after purchase via email link"
-    ],
-    delivery: "Digital access after purchase via email link"
-  },
-  {
     id: "1",
     title: "Nebula UI Kit",
     creator: "designpro",
